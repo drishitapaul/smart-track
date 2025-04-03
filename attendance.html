@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance - e-Office</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h2 class="title">e-Office</h2>
+        <nav>
+            <a href="{{ url_for('dashboard') }}">🏠 Dashboard</a>
+            <a href="{{ url_for('attendance') }}">👨‍💼 Manage Attendance</a>
+            <a href="{{ url_for('files') }}">📁 File Tracking</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Mark Attendance</h2>
+        <form method="post">
+            <input type="text" name="name" placeholder="Employee Name" required>
+            <select name="status">
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Status</th>
+            </tr>
+            {% for record in records %}
+            <tr>
+                <td>{{ record[1] }}</td>
+                <td class="status-{{ record[2]|lower }}">{{ record[2] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #2C3E50, #4A90E2);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+/* Quick Actions Section */
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.quick-actions-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.quick-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.blue {
+    background: #4A90E2;
+    color: white;
+}
+
+.blue:hover {
+    background: #357ABD;
+}
+
+.green {
+    background: #27AE60;
+    color: white;
+}
+
+.green:hover {
+    background: #1F8A50;
+}
+
+/* Navbar Links - Elegant Gold Instead of Blue */
+.navbar a {
+    color: #D4AF37; /* Classy Gold */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover Effect - Slight Brightness */
+.navbar a:hover {
+    color: #FFD700; /* Brighter Gold */
+}
+
+/* Visited Links - Keep Consistency */
+.navbar a:visited {
+    color: #D4AF37;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #fff;
+}
+
+/* Status Colors */
+.status-approved {
+    color: #27AE60;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #F2994A;
+    font-weight: bold;
+}
+
+.status-rejected {
+    color: red;
+    font-weight: bold;
+}
