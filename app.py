@@ -5,9 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask("SmartTrack")
 
 # Configure PostgreSQL database connection (replace with your Render PostgreSQL connection string)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://username:password@host:port/database_name'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://smart_track_user:7hzAF8qUNWYRjkdZ87VVhjXKc3IrWy6I@dpg-cvnd6ru3jp1c738hiudg-a/smart_track'
 # Initialize the database
 db = SQLAlchemy(app)
 
