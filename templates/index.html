@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Office Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-content">
+            <h1 class="main-title">Smart Solutions for Smarter Workplaces!</h1>
+            <p class="subtitle">Track. Manage. Approve. All in one place.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2 class="quick-actions-title">Quick Actions</h2>
+        <div class="quick-actions">
+            <a href="{{ url_for('attendance') }}" class="btn blue">✔️ Mark Attendance</a>
+            <a href="{{ url_for('files') }}" class="btn green">📁 Track Files</a>
+        </div>
+    </div>
+</body>
+</html>
